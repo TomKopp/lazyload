@@ -6,7 +6,8 @@ module.exports = {
   },
   "env": {
     "es6": true,
-    "node": true
+		"node": true,
+		"browser": true
   },
   "rules": {
     "accessor-pairs": "error",
@@ -123,7 +124,13 @@ module.exports = {
       "error",
       5
     ],
-    "max-statements": "error",
+		"max-statements": [
+			"error",
+			10,
+			{
+				"ignoreTopLevelFunctions": true
+			}
+		],
     "max-statements-per-line": "error",
     "multiline-comment-style": [
       "error",
@@ -153,7 +160,13 @@ module.exports = {
     "no-extend-native": "error",
     "no-extra-bind": "error",
     "no-extra-label": "error",
-    "no-extra-parens": "error",
+		"no-extra-parens": [
+			"error",
+			"all",
+			{
+				"returnAssign": false
+			}
+		],
     "no-floating-decimal": "error",
     "no-implicit-coercion": "error",
     "no-implicit-globals": "error",
@@ -292,7 +305,10 @@ module.exports = {
     ],
     "valid-jsdoc": "error",
     "vars-on-top": "error",
-    "wrap-iife": "error",
+		"wrap-iife": [
+			"error",
+			"inside"
+		],
     "wrap-regex": "error",
     "yield-star-spacing": "error",
     "yoda": [

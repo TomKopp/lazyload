@@ -35,10 +35,9 @@
 	// watches for dom changes, filters for element changes and className, adds element to intersectionObserver
 	const mutationHandler = (intersectionObserver) => (mutationRecordArray) => mutationRecordArray
 		.filter(({ type }) => type === 'childList')
-		.forEach(({ addedNodes }) => Array
-			.from(addedNodes)
-			.filter(({ classList }) => classList && classList.contains(className))
-			.forEach((el) => intersectionObserver.observe(el)));
+		.reduce((acc, { addedNodes }) => acc.concat(Array.from(addedNodes)), [])
+		.filter(({ classList }) => classList && classList.contains(className))
+		.forEach((el) => intersectionObserver.observe(el));
 
 
 	const intersectionObserver = new IntersectionObserver(intersectionHandler, { rootMargin });

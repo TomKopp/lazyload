@@ -1,4 +1,4 @@
-(function LazyLoader(ctx, root, { className = 'lazyload', rootMargin = '100px' } = {}) {
+(function LazyLoader(root, { className = 'lazyload', rootMargin = '100px' } = {}) {
 
 	// img is a non-live dom-node
 	const load = (img, intersectionObserver) => {
@@ -47,7 +47,7 @@
 	const mutationObserver = new MutationObserver(mutationHandler(intersectionObserver));
 	mutationObserver.observe(root, { childList: true, subtree: true });
 
-})(window, document);
+})(document);
 
 // * add background img load
 // if (img.getAttribute('data-background-image')) {

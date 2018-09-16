@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witzbould/witzbouldsLazyload.git"
+    "url": "git+https://github.com/witzbould/lazyload.git"
   },
   "keywords": [
     "lazyload",
@@ -19,7 +19,7 @@
   "author": "Tom Kopp",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/witzbould/witzbouldsLazyload/issues"
+    "url": "https://github.com/witzbould/lazyload/issues"
   },
-  "homepage": "https://github.com/witzbould/witzbouldsLazyload#readme"
+  "homepage": "https://github.com/witzbould/lazyload#readme"
 }

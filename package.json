@@ -1,0 +1,25 @@
+{
+  "name": "@witzbould/lazyload",
+  "version": "0.0.1",
+  "description": "Witzbould's lazyload with IntersectionObserver and MutationObserver",
+  "browser": "./src/lazyload.js",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/witzbould/witzbouldsLazyload.git"
+  },
+  "keywords": [
+    "lazyload",
+    "lazyloading",
+    "intersection-observer",
+    "mutation-observer"
+  ],
+  "author": "Tom Kopp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/witzbould/witzbouldsLazyload/issues"
+  },
+  "homepage": "https://github.com/witzbould/witzbouldsLazyload#readme"
+}

@@ -4,10 +4,11 @@ lazyload inspired by https://github.com/Paul-Browne/lazyestload.js
 
 ## Usage
 
-Add `class=lazyload` and `data-src` or `data-srcset` to your HTML markup.\
-The lazyloader will automaticaly atach to all `img` with that class and will monitor your DOM for additional images.
+Add the `class=lazyload` to your HTML markup.
+Furthermore you must add `data-src` or `data-srcset` attributes.\
+The lazyloader will automaticaly atach to all `img` with the `lazyload` class and will monitor your DOM for additional images.
 
-It uses [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+This lazyload library uses [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 and [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).\
 *You* have to ensure that the targeted browsers support those!
 
